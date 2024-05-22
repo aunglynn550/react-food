@@ -76,3 +76,70 @@ export const menu_list = [
         menu_image : gnl_12,
     }
 ]
+
+export const food_list = [
+    {
+        _id: "1",
+        name:"Greek salad",
+        image:gnl_2,
+        price:12,
+        description:"Food provides essential nutrients for overall health and well-being",
+        category:"Salad"
+    },
+    {
+        _id: "2",
+        name:"Veg salad",
+        image:gnl_3,
+        price:12,
+        description:"Food provides essential nutrients for overall health and well-being",
+        category:"Salad"
+    },
+    {
+        _id: "3",
+        name:"Greek salad",
+        image:gnl_4,
+        price:12,
+        description:"Food provides essential nutrients for overall health and well-being",
+        category:"Salad"
+    },
+    {
+        _id: "4",
+        name:"Greek salad",
+        image:gnl_5,
+        price:12,
+        description:"Food provides essential nutrients for overall health and well-being",
+        category:"Salad"
+    },
+    {
+        _id: "5",
+        name:"Greek salad",
+        image:gnl_6,
+        price:12,
+        description:"Food provides essential nutrients for overall health and well-being",
+        category:"Salad"
+    },
+    {
+        _id: "6",
+        name:"Veg salad",
+        image:gnl_7,
+        price:12,
+        description:"Food provides essential nutrients for overall health and well-being",
+        category:"Salad"
+    },
+    {
+        _id: "7",
+        name:"Greek salad",
+        image:gnl_8,
+        price:12,
+        description:"Food provides essential nutrients for overall health and well-being",
+        category:"Salad"
+    },
+    {
+        _id: "8",
+        name:"Greek salad",
+        image:gnl_9,
+        price:12,
+        description:"Food provides essential nutrients for overall health and well-being",
+        category:"Salad"
+    }
+]
