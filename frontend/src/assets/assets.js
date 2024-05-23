@@ -15,12 +15,20 @@ import gnl_11 from './gnl-11.jpg'
 import gnl_12 from './gnl-12.jpg'
 import add_icon from './add_icon.png'
 import remove_icon from './remove_icon.png'
+import logo from './logo.jpg'
+import facebook from './facebook.jpg'
+import twitter from './twitter.jpg'
+import instagram from './instagram.jpg'
 
 export const assets = {
     girldev_8,
     add_icon,
     remove_icon,
-}
+    logo,
+    facebook,
+    twitter,
+    instagram,
+ }
 
 export const menu_list = [
     {
