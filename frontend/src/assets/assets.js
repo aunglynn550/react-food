@@ -96,7 +96,7 @@ export const food_list = [
         image:gnl_3,
         price:12,
         description:"Food provides essential nutrients for overall health and well-being",
-        category:"Salad"
+        category:"Rolls"
     },
     {
         _id: "3",
@@ -104,7 +104,7 @@ export const food_list = [
         image:gnl_4,
         price:12,
         description:"Food provides essential nutrients for overall health and well-being",
-        category:"Salad"
+        category:"Deserts"
     },
     {
         _id: "4",
@@ -112,7 +112,7 @@ export const food_list = [
         image:gnl_5,
         price:12,
         description:"Food provides essential nutrients for overall health and well-being",
-        category:"Salad"
+        category:"Sandwich"
     },
     {
         _id: "5",
@@ -120,7 +120,7 @@ export const food_list = [
         image:gnl_6,
         price:12,
         description:"Food provides essential nutrients for overall health and well-being",
-        category:"Salad"
+        category:"Coke"
     },
     {
         _id: "6",
@@ -128,7 +128,7 @@ export const food_list = [
         image:gnl_7,
         price:12,
         description:"Food provides essential nutrients for overall health and well-being",
-        category:"Salad"
+        category:"Pure Veg"
     },
     {
         _id: "7",
@@ -136,7 +136,7 @@ export const food_list = [
         image:gnl_8,
         price:12,
         description:"Food provides essential nutrients for overall health and well-being",
-        category:"Salad"
+        category:"Pasta"
     },
     {
         _id: "8",
@@ -144,6 +144,6 @@ export const food_list = [
         image:gnl_9,
         price:12,
         description:"Food provides essential nutrients for overall health and well-being",
-        category:"Salad"
+        category:"Noodles"
     }
 ]
