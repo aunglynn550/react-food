@@ -13,9 +13,13 @@ import gnl_9 from './gnl-9.jpg'
 import gnl_10 from './gnl-10.jpg'
 import gnl_11 from './gnl-11.jpg'
 import gnl_12 from './gnl-12.jpg'
+import add_icon from './add_icon.png'
+import remove_icon from './remove_icon.png'
 
 export const assets = {
-    girldev_8
+    girldev_8,
+    add_icon,
+    remove_icon,
 }
 
 export const menu_list = [
