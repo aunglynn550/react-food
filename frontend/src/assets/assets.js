@@ -19,6 +19,7 @@ import logo from './logo.jpg'
 import facebook from './facebook.jpg'
 import twitter from './twitter.jpg'
 import instagram from './instagram.jpg'
+import cross_icon from './cross_icon.png'
 
 export const assets = {
     girldev_8,
@@ -28,6 +29,7 @@ export const assets = {
     facebook,
     twitter,
     instagram,
+    cross_icon,
  }
 
 export const menu_list = [
