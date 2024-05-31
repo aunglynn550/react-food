@@ -16,7 +16,12 @@ a{
   width: 80%;
   margin: auto;
 }
-
+.profile{
+  width: 40px;
+  aspect-ratio: 1 /.9;
+  border-radius: 50%;
+  object-fit: cover;
+}
 @keyframes fadeIn{
   0%{
     opacity: 0;

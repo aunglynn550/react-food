@@ -20,6 +20,9 @@ import facebook from './facebook.jpg'
 import twitter from './twitter.jpg'
 import instagram from './instagram.jpg'
 import cross_icon from './cross_icon.png'
+import profile from './profile.jpg'
+import bag_icon from './bag_icon.png'
+import logout_icon from './logout_icon.png'
 
 export const assets = {
     girldev_8,
@@ -30,6 +33,9 @@ export const assets = {
     twitter,
     instagram,
     cross_icon,
+    profile,
+    bag_icon,
+    logout_icon
  }
 
 export const menu_list = [
