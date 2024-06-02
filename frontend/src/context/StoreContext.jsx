@@ -4,23 +4,23 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props) => {
 
-    const[cartItems, setCarttems] = useState({});
+    const[cartItems, setCartItems] = useState({});
     const url = "http://localhost:4000"
     const [token, setToken] = useState("")
     const [food_list,setFoodList] = useState([])
     const addToCart = async(itemId) =>{
         if(!cartItems[itemId]){
-            setCarttems((prev)=>({...prev,[itemId]: 1}))
+            setCartItems((prev)=>({...prev,[itemId]: 1}))
         }
         else{
-            setCarttems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
+            setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
         }
         if(token){
             await axios.post(url+"/api/cart/add",{itemId},{headers:{token}})
         }
     }
     const removeFromCart = async(itemId) => {
-        setCarttems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
+        setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
         if(token){
             await axios.post(url+"/api/cart/remove",{itemId},{headers:{token}})
         }
@@ -40,11 +40,16 @@ const StoreContextProvider = (props) => {
         const response = await axios.get(url+"/api/food/list")
         setFoodList(response.data.data)
     }
+    const loadCartData = async (token)=>{
+        const response = await axios.post(url+"/api/cart/get",{},{headers:{token}})
+        setCartItems(response.data.cartData)
+    }
     useEffect(()=>{      
         async function loadData(){
             await fetchFoodList()
             if(localStorage.getItem("token")){
-                setToken(localStorage.getItem("token"))
+                setToken(localStorage.getItem("token"));
+                await loadCartData(localStorage.getItem("token"))
             }
         }
         loadData()
@@ -54,7 +59,7 @@ const StoreContextProvider = (props) => {
     const contextValue = {
         food_list,
         cartItems,
-        setCarttems,
+        setCartItems,
         addToCart,
         removeFromCart,
         getTotalCartAmount,
